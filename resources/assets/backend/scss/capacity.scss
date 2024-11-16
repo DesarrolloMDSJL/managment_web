@@ -1,0 +1,103 @@
+.covid-people {
+    
+    span {
+        display: block;
+    }
+    .custom-card {
+        border-radius: 20px;
+        margin: 0 auto;
+        overflow: hidden;
+        max-width: 350px;
+        .recommendations {
+            background-color: #222a35;
+            padding: 1.25rem 2rem;
+            .title {
+                margin-bottom: 1.25rem;
+                span {
+                    color: #FFF;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+            .option {
+                align-items: center;
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 1rem;
+                .icon {
+                    margin-right: 2rem;
+                    svg {
+                        margin: 0 auto;
+                        height: 53px;
+                        width: 45px;
+                    }
+                    .cls-1 {
+                        fill: #FFF;
+                    }
+                }
+                .label {
+                    span {
+                        color: #FFF;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .capacity {
+            .option-general {
+                padding: 1.25rem 2rem;
+                &:first-child {
+                    background-color: #333e50;
+                }
+                &:nth-child(2) {
+                    background-color: #8397b0;
+                }
+                .subtitle {
+                    span {
+                        color: #FFF;
+                        font-size: 1.1rem;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+                .information {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    .icon {
+                        color: #FFF;
+                        font-size: 2.5rem;
+                        margin-left: 2rem;
+                    }
+                    .quantity {
+                        span {
+                            color: #FFF;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            .option-only-text {
+                padding: 1.25rem 2rem;
+                background-color: #019275;
+                .title {
+                    span {
+                        color: #FFF;
+                        font-size: 2rem;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    .buttons-container {
+        margin: 0 auto;
+        overflow: hidden;
+        max-width: 300px;
+        button {
+
+        }
+    }
+}

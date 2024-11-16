@@ -1,0 +1,89 @@
+.covid-people span {
+  display: block;
+}
+.covid-people .custom-card {
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 350px;
+}
+.covid-people .custom-card .recommendations {
+  background-color: #222a35;
+  padding: 1.25rem 2rem;
+}
+.covid-people .custom-card .recommendations .title {
+  margin-bottom: 1.25rem;
+}
+.covid-people .custom-card .recommendations .title span {
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.covid-people .custom-card .recommendations .option {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.covid-people .custom-card .recommendations .option .icon {
+  margin-right: 2rem;
+}
+.covid-people .custom-card .recommendations .option .icon svg {
+  margin: 0 auto;
+  height: 53px;
+  width: 45px;
+}
+.covid-people .custom-card .recommendations .option .icon .cls-1 {
+  fill: #FFF;
+}
+.covid-people .custom-card .recommendations .option .label span {
+  color: #FFF;
+  font-size: 0.9rem;
+}
+.covid-people .custom-card .capacity .option-general {
+  padding: 1.25rem 2rem;
+}
+.covid-people .custom-card .capacity .option-general:first-child {
+  background-color: #333e50;
+}
+.covid-people .custom-card .capacity .option-general:nth-child(2) {
+  background-color: #8397b0;
+}
+.covid-people .custom-card .capacity .option-general .subtitle span {
+  color: #FFF;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.covid-people .custom-card .capacity .option-general .information {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.covid-people .custom-card .capacity .option-general .information .icon {
+  color: #FFF;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+.covid-people .custom-card .capacity .option-general .information .quantity span {
+  color: #FFF;
+  font-size: 1.5rem;
+}
+.covid-people .custom-card .capacity .option-only-text {
+  padding: 1.25rem 2rem;
+  background-color: #019275;
+}
+.covid-people .custom-card .capacity .option-only-text .title span {
+  color: #FFF;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.covid-people .buttons-container {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+/*# sourceMappingURL=app.css.map*/
