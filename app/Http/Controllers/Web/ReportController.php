@@ -42,7 +42,8 @@ class ReportController extends Controller
                     LEFT JOIN mante.unidad u  ON   u.unidad_id=ct.unidad_id
                     WHERE (ctp.periodo=$selectAnio) AND (cpt.flag_extorno=0) 
                     AND YEAR(cpt.fecha_pago) = $selectAnio AND u.unidad_id=$selectArea
-                    AND (ct.estado=1) AND u.estado=1");
+                    --AND (ct.estado=1) AND u.estado=1
+                    ");
             return response()->json([
                 'status'=>true,
                 'res'=>$res
