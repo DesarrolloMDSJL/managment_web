@@ -98,7 +98,7 @@ class ReportController extends Controller
                     LEFT JOIN mante.unidad u With (nolock) ON u.unidad_id=ct.unidad_id
                     WHERE (ctp.periodo=$selectAnio) AND (cpt.flag_extorno=0) 
                     AND YEAR(cpt.fecha_pago) = $selectAnio and u.unidad_id=$selectArea 
-                    AND (ct.estado=1) AND u.estado=1
+                    --AND (ct.estado=1) AND u.estado=1
                     GROUP BY mante.id, mante.mes order by mante.id asc");
             return response()->json([
                 'status'=>true,
@@ -128,7 +128,7 @@ class ReportController extends Controller
                     AND (cpt.flag_extorno=0 OR cpt.flag_extorno IS NULL) 
                     AND year(cpt.fecha_pago)=$selectAnio     
                     AND month(cpt.fecha_pago) = $selectMes
-                    AND (ct.estado=1 OR ct.estado IS NULL) 
+                    --AND (ct.estado=1 OR ct.estado IS NULL) 
                     and u.unidad_id=$selectArea
                     GROUP BY  day(cpt.fecha_pago), month(cpt.fecha_pago)
                     order  by  month(cpt.fecha_pago), day(cpt.fecha_pago) asc");
@@ -159,7 +159,7 @@ class ReportController extends Controller
                     where ctp.periodo=$selectAnio 
                     and cpt.flag_extorno=0 
                     and unidad_id=$selectArea
-                    and ct.estado=1
+                    --and ct.estado=1
                     and m.id=$selectMes
                     and YEAR(cpt.fecha_pago)=$selectAnio
                     group by cpt.tupa_id, ct.descripcion, ctp.tasa 
